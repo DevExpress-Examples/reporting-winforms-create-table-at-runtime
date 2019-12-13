@@ -6,7 +6,6 @@ using DevExpress.XtraReports.UI;
 namespace XRTable_RuntimeCreation {
     public partial class XtraReport1 : XtraReport {
 
-        #region #Report Creation
         public XtraReport1() {
             InitializeComponent();
         }
@@ -14,7 +13,6 @@ namespace XRTable_RuntimeCreation {
         private void XtraReport1_BeforePrint(object sender, PrintEventArgs e) {
             this.Detail.Controls.Add(CreateXRTable());
         }
-        #endregion
 
         public XRTable CreateXRTable() {
             int cellsInRow = 3;

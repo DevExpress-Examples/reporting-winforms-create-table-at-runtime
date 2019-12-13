@@ -1,8 +1,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
-* [XtraReport1.cs](./CS/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/XtraReport1.vb))
+* [Form1.cs](./CS/Reporting_runtime-table-creation-best-practices-iterative-approach-e1356/Form1.cs) (VB: [Form1.vb](./VB/Reporting_runtime-table-creation-best-practices-iterative-approach-e1356/Form1.vb))
+* [XtraReport1.cs](./CS/Reporting_runtime-table-creation-best-practices-iterative-approach-e1356/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/Reporting_runtime-table-creation-best-practices-iterative-approach-e1356/XtraReport1.vb))
 <!-- default file list end -->
 # Runtime table creation best practices (iterative approach)
 
