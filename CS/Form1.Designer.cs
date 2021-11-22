@@ -23,34 +23,60 @@ namespace XRTable_RuntimeCreation {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTableInCode = new System.Windows.Forms.Button();
+            this.btnTableInEventHandler = new System.Windows.Forms.Button();
+            this.btnLoadReportCodeBehind = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnTableInCode
             // 
-            this.button1.Location = new System.Drawing.Point(80, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Show Preview";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTableInCode.Location = new System.Drawing.Point(46, 25);
+            this.btnTableInCode.Name = "btnTableInCode";
+            this.btnTableInCode.Size = new System.Drawing.Size(223, 56);
+            this.btnTableInCode.TabIndex = 0;
+            this.btnTableInCode.Text = "Create a report with a table";
+            this.btnTableInCode.UseVisualStyleBackColor = true;
+            this.btnTableInCode.Click += new System.EventHandler(this.btnTableInCode_Click);
+            // 
+            // btnTableInEventHandler
+            // 
+            this.btnTableInEventHandler.Location = new System.Drawing.Point(46, 113);
+            this.btnTableInEventHandler.Name = "btnTableInEventHandler";
+            this.btnTableInEventHandler.Size = new System.Drawing.Size(223, 56);
+            this.btnTableInEventHandler.TabIndex = 1;
+            this.btnTableInEventHandler.Text = "Create a report and add a table in the event handler";
+            this.btnTableInEventHandler.UseVisualStyleBackColor = true;
+            this.btnTableInEventHandler.Click += new System.EventHandler(this.btnTableInEventHandler_Click);
+            // 
+            // btnLoadReportCodeBehind
+            // 
+            this.btnLoadReportCodeBehind.Location = new System.Drawing.Point(46, 201);
+            this.btnLoadReportCodeBehind.Name = "btnLoadReportCodeBehind";
+            this.btnLoadReportCodeBehind.Size = new System.Drawing.Size(223, 56);
+            this.btnLoadReportCodeBehind.TabIndex = 2;
+            this.btnLoadReportCodeBehind.Text = "Preview a report with a table created in the code behind";
+            this.btnLoadReportCodeBehind.UseVisualStyleBackColor = true;
+            this.btnLoadReportCodeBehind.Click += new System.EventHandler(this.btnLoadReportCodeBehind_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 264);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(314, 285);
+            this.Controls.Add(this.btnLoadReportCodeBehind);
+            this.Controls.Add(this.btnTableInEventHandler);
+            this.Controls.Add(this.btnTableInCode);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Create XRTable at Runtime";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTableInCode;
+        private System.Windows.Forms.Button btnTableInEventHandler;
+        private System.Windows.Forms.Button btnLoadReportCodeBehind;
     }
 }
 
