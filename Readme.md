@@ -1,8 +1,4 @@
-<!-- default badges list -->
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1356)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-# Reporting - Create a Data-Bound Table at Runtime 
+# Reporting for WinForms - Create a Data-Bound Table at Runtime 
 
 This example contains code that creates a report with a data-bound table. You can create a table within a report in the following ways:
 
@@ -11,8 +7,7 @@ This example contains code that creates a report with a data-bound table. You ca
 - Create a table in the report constructor (call the method in the report's code-behind file).
 
 A table in a report is the [XRTable](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable) reporting control. You should
-add this control to the collection of controls for a specific [report band](https://docs.devexpress.com/XtraReports/2587/detailed-guide-to-devexpress-reporting/introduction-to-banded-reports). Populate the  
-[row collection](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.Rows), and add cells to the [cell collection](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTableRow.Cells) for each row. Enclose all row and cell collection modifications within the [XRTable.BeginInit](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.BeginInit) and [XRTable.EndInit](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.EndInit) method pair.
+add this control to the collection of controls for a specific [report band](https://docs.devexpress.com/XtraReports/2587/detailed-guide-to-devexpress-reporting/introduction-to-banded-reports). Populate the [row collection](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.Rows), and add cells to the [cell collection](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTableRow.Cells) for each row. Enclose all row and cell collection modifications within the [XRTable.BeginInit](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.BeginInit) and [XRTable.EndInit](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTable.EndInit) method pair.
 
 Use the [XRTableCell.ExpressionBindings](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRControl.ExpressionBindings) property to bind a cell to a data field.
 
@@ -20,7 +15,7 @@ Explicitly specify the **XRTable** control width. When you add rows and cells to
 
 Explicitly specify the table height only if you do not expect cell content to exceed the cell height. If the [XRTableCell.CanGrow](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTableCell.CanGrow) option is enabled, the cell can grow to display the entire content.
 
-![](Images/screenshot.png)
+![Screenshot](Images/screenshot.png)
 
 <!-- default file list -->
 
