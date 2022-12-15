@@ -113,7 +113,7 @@ Namespace XRTable_RuntimeCreation
 			sqlDataSource.Queries.Add(querySalesPerson)
 			Return sqlDataSource
 		End Function
-		Private Sub Report_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs)
+		Private Sub Report_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 			Dim report = TryCast(sender, XtraReport)
 			AddTablesToReport(report)
 		End Sub

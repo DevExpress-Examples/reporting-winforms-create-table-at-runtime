@@ -10,7 +10,7 @@ namespace XRTable_RuntimeCreation {
             InitializeComponent();
         }
 
-        private void XtraReport1_BeforePrint(object sender, PrintEventArgs e) {
+        private void XtraReport1_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             this.Detail.Controls.Add(CreateXRTable());
         }
 
@@ -34,14 +34,14 @@ namespace XRTable_RuntimeCreation {
                 table.Rows.Add(row);
             }
 
-            table.BeforePrint += new PrintEventHandler(table_BeforePrint);
+            table.BeforePrint += new BeforePrintEventHandler(table_BeforePrint);
             table.AdjustSize();
             table.EndInit();
             return table;
         }
 
         // The following code makes the table span to the entire page width.
-        void table_BeforePrint(object sender, PrintEventArgs e) {
+        void table_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             XRTable table = ((XRTable)sender);
             table.LocationF = new DevExpress.Utils.PointFloat(0F, 0F);
             table.WidthF = this.PageWidth - this.Margins.Left - this.Margins.Right;
