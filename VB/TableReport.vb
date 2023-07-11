@@ -11,7 +11,7 @@ Namespace XRTable_RuntimeCreation
 			InitializeComponent()
 		End Sub
 
-		Private Sub XtraReport1_BeforePrint(ByVal sender As Object, ByVal e As PrintEventArgs) Handles Me.BeforePrint
+		Private Sub XtraReport1_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles Me.BeforePrint
 			Me.Detail.Controls.Add(CreateXRTable())
 		End Sub
 
@@ -42,7 +42,7 @@ Namespace XRTable_RuntimeCreation
 		End Function
 
 		' The following code makes the table span to the entire page width.
-		Private Sub table_BeforePrint(ByVal sender As Object, ByVal e As PrintEventArgs)
+		Private Sub table_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 			Dim table As XRTable = (DirectCast(sender, XRTable))
 			table.LocationF = New DevExpress.Utils.PointFloat(0F, 0F)
 			table.WidthF = Me.PageWidth - Me.Margins.Left - Me.Margins.Right

@@ -1,7 +1,3 @@
-<!-- default badges list -->
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1356)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for WinForms - Create a Data-Bound Table at Runtime 
 
 This example contains code that creates a report with a data-bound table. You can create a table within a report in the following ways:
@@ -19,7 +15,7 @@ Explicitly specify the **XRTable** control width. When you add rows and cells to
 
 Explicitly specify the table height only if you do not expect cell content to exceed the cell height. If the [XRTableCell.CanGrow](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRTableCell.CanGrow) option is enabled, the cell can grow to display the entire content.
 
-![Screenshot](Images/screenshot.png)
+![Data-bound table in a WinForms report](Images/screenshot.png)
 
 <!-- default file list -->
 

@@ -138,7 +138,7 @@ namespace XRTable_RuntimeCreation
             sqlDataSource.Queries.Add(querySalesPerson);
             return sqlDataSource;
         }
-        private void Report_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void Report_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             var report = sender as XtraReport;
             AddTablesToReport(report);
         }
